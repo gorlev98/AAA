@@ -1,6 +1,7 @@
 {
   "name": "demo-deploy",
   "version": "0.0.0",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
@@ -26,8 +27,8 @@
     "express": "^4.16.3",
     "path": "^0.12.7",
     "rxjs": "^6.0.0",
-    "zone.js": "^0.8.26",
-    "typescript": "~2.7.2"
+    "typescript": "~2.7.2",
+    "zone.js": "^0.8.26"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.6.0",
