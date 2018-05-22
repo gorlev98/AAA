@@ -1,16 +1,25 @@
-.menuClass{
-  position:absolute;
-  right:50px;
-}
-.example-spacer {
-  flex: 1 1 auto;
-}
+
 .usernameBlock{
-  position: absolute;
-  left:500px;
-  width: 200px;
-  background-color: red;
+  position:absolute;
+  left:105px;
+  top:10px;
+  width:100px;
+  font-size: 1.3em;
 }
 .header{
-  background-color: #e6870d;
+  position:absolute;
+  background-color: wheat;
+  left:0px;
+  right:0px;
+  top:0px;
+  height:50px;
 }
+
+.menuButtonBlock{
+  top:5px;
+  left:10px;
+}
+.menuBlock{
+  top:100px;
+}
+

@@ -1,8 +1,16 @@
 .tagCloud{
   position:absolute;
-  top:60px;
-  width:180px;
-  height:400px;
+  top:160px;
+  width:280px;
+  height:300px;
   right: 10px;
-  background-color: brown;
+  background-color: wheat;
+}
+.tagBlock{
+  top:10px;
+  height: 20px;
+  left:30px;
+}
+.space{
+  height: 20px;
 }

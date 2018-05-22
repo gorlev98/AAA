@@ -1,1 +1,6 @@
-<div class="tagCloud">Tag cloud</div>
+<div class="tagCloud">Теги
+  <div class="space"></div>
+  <li class="tagBlock" *ngFor="let tags of TAGS">
+    {{tags.tagName}}
+  </li>
+</div>

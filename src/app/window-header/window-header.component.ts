@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import {MatFormFieldModule, MatToolbarModule, MatIconModule, MatTabsModule, MatInputModule, MatMenuModule} from '@angular/material';
+import { Component, Inject} from '@angular/core';
+import {MatButtonModule} from '@angular/material/button';
 @Component({
   selector: 'app-window-header',
   templateUrl: './window-header.component.html',
   styleUrls: ['./window-header.component.css']
 })
-export class WindowHeaderComponent implements OnInit {
+export class WindowHeaderComponent{
 
   constructor() { }
 
-  ngOnInit() {
-  }
 
 }

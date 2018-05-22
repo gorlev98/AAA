@@ -3,6 +3,8 @@ import {News} from '../news';
 import {Pictures} from '../pictures';
 import {NewsMass} from '../mock-news';
 import {PictureMass} from '../mock-pictures';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material';
 @Component({
   selector: 'app-main-block',
   templateUrl: './main-block.component.html',
