@@ -1,0 +1,52 @@
+.center-div
+{
+  margin: 0 auto;
+  width: 600px;
+}
+.mainBlock{
+  position:absolute;
+  top:70px;
+  left:300px;
+  bottom:0px;
+  right:300px;
+  background-color: purple;
+  border-top:solid black;
+  overflow: auto;
+}
+.goLeftButton{
+  position:absolute;
+  top:50px;
+  left:300px;
+  height: 20px;
+  width:100px;
+}
+.goRightButton{
+  position:absolute;
+  top:50px;
+  right:300px;
+  height: 20px;
+  width:100px;
+}
+.newsBlock{
+  left:10px;
+  right:10px;
+  background-color: wheat;
+  border: dotted black;
+  border-top: none;
+}
+.newsNameBlock{
+  top:50px;
+  text-align: center;
+  height: 20px;
+}
+
+.newsPictureBlock{
+  width: 600px;
+  height: 400px;
+
+}
+.newsTextBlock{
+  top:10px;
+  left:10px;
+  right:10px;
+}

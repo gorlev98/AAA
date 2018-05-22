@@ -1,0 +1,8 @@
+.tagCloud{
+  position:absolute;
+  top:60px;
+  width:180px;
+  height:400px;
+  right: 10px;
+  background-color: brown;
+}

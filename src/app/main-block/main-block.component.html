@@ -1,0 +1,9 @@
+<div class="mainBlock">
+  <li class="newsBlock" *ngFor="let news of NEWS">
+        <div class="newsNameBlock">{{news.newsName}}</div>
+        <div class="center-div">
+          <img class="newsPictureBlock" src="{{PICTURES[news.pictureMass[0]].url}}">
+        </div>
+        <div class="newsTextBlock">{{news.text}}</div>
+     </li>
+</div>
