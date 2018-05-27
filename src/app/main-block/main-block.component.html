@@ -18,7 +18,8 @@
             <img class="newsPictureBlock" src="{{PICTURES[news.pictureMass[0]].url}}">
           </div>
           <div class="newsTextBlock">{{news.text}}</div>
-
+          <div class="authorBlock">Author</div>
+          <div class="authorBlock">{{USERMASS[news.userId].name}}</div>
        </li>
     </ul>
   </div>
@@ -48,6 +49,15 @@
         <button mat-fab color="assent">Comment</button>
       <button mat-raised-button color="primary" (click)="onSave()">Save</button>
       <button mat-raised-button color="primary" (click)="onDeSelect()">Return</button>
+      <li class="commentBlock" *ngFor="let comment of COMMENTS">
+        <div class="comment">
+          <div *ngIf="comment.newsId==selectedNews.newsId">
+            <div *ngIf="comment.prevCommId">to {{USERMASS[1].name}}</div>
+            <div>Author: {{USERMASS[comment.userId].name}}</div>
+            <div>{{comment.text}}</div>
+          </div>
+        </div>
+      </li>
     </div>
 
 

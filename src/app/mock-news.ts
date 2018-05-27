@@ -3,11 +3,11 @@
  */
 import { News } from './news';
 
-export var NewsMass: News[]=[
+export let NewsMass: News[]=[
   { newsId:0,
     userId:1,
     newsName:"Name1",
-    text:"Text1",
+    text:"This is the test news, that have few pictures and two commentaries",
     pictureMass:[0,1,2],
     kommentaryMass:[],
     commonMark:undefined,

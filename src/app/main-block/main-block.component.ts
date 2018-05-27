@@ -1,8 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import {News} from '../news';
 import {Pictures} from '../pictures';
+import {Comment} from '../comment';
+import {User} from '../user';
 import {NewsMass} from '../mock-news';
 import {PictureMass} from '../mock-pictures';
+import {CommentMass} from '../mock-comment';
+import {UserMass} from '../mock-user';
+import {forEach} from "@angular/router/src/utils/collection";
 @Component({
   selector: 'app-main-block',
   templateUrl: './main-block.component.html',
@@ -14,6 +19,8 @@ export class MainBlockComponent implements OnInit {
   step=0;
   size=2;
   NEWS=NewsMass;
+  USERMASS=UserMass;
+  COMMENTS=CommentMass;
   PICTURES=PictureMass;
   pictureNumber=0;
   newsText="";
@@ -29,6 +36,7 @@ export class MainBlockComponent implements OnInit {
 
     this.newsText=news.text;
     this.selectedNews = news;
+    //this.COMMENTS=CommentMass.filter(Comment => Comment.newsId=this.selectedNews.newsId);
 
   }
   onDeSelect():void{
