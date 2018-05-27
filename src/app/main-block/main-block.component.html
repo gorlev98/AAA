@@ -50,8 +50,8 @@
       <button mat-raised-button color="primary" (click)="onSave()">Save</button>
       <button mat-raised-button color="primary" (click)="onDeSelect()">Return</button>
       <li class="commentBlock" *ngFor="let comment of COMMENTS">
-        <div class="comment">
-          <div *ngIf="comment.newsId==selectedNews.newsId">
+        <div class="comment" *ngIf="comment.newsId==selectedNews.newsId">
+          <div>
             <div *ngIf="comment.prevCommId">to {{USERMASS[1].name}}</div>
             <div>Author: {{USERMASS[comment.userId].name}}</div>
             <div>{{comment.text}}</div>

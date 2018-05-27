@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
 
-/***/ "./node_modules/@angular/core/esm5 lazy recursive":
-/*!***************************************************************!*\
-  !*** ./node_modules/@angular/core/esm5 lazy namespace object ***!
-  \***************************************************************/
+/***/ "./src/$$_lazy_route_resource lazy recursive":
+/*!**********************************************************!*\
+  !*** ./src/$$_lazy_route_resource lazy namespace object ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -19,7 +19,7 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = "./node_modules/@angular/core/esm5 lazy recursive";
+webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
@@ -171,7 +171,7 @@ module.exports = ".center-div\r\n{\r\n  margin: 0 auto;\r\n  width: 600px;\r\n}\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<style>\n  ul {\n    margin: 0;\n    padding: 0;\n  }\n</style>\n<div *ngIf=\"selectedNews; then thenBlock else elseBlock\"></div>\n<ng-template #elseBlock>\n  <div class=\"mainBlock\" >\n    <ul class=\"news\">\n      <li class=\"newsBlock\" *ngFor=\"let news of NEWS\"\n          [class.selected]=\"news === selectedNews\"\n          (click)=\"onSelect(news)\">\n        <br>\n        <div class=\"newsNameBlock\">{{news.newsName}}</div>\n        <br>\n          <div class=\"center-div\">\n            <img class=\"newsPictureBlock\" src=\"{{PICTURES[news.pictureMass[0]].url}}\">\n          </div>\n          <div class=\"newsTextBlock\">{{news.text}}</div>\n          <div class=\"authorBlock\">Author</div>\n          <div class=\"authorBlock\">{{USERMASS[news.userId].name}}</div>\n       </li>\n    </ul>\n  </div>\n</ng-template>\n<ng-template #thenBlock>\n  <div class=\"oneNewsBlock\">\n     <br>\n     <div class=\"newsNameBlock\">{{selectedNews.newsName}}</div>\n    <br>\n      <div class=\"center-div\">\n        <img class=\"newsPictureBlock\" src=\"{{PICTURES[selectedNews.pictureMass[pictureNumber]].url}}\" (click)=\"changePicture()\">\n        Нажмите на картинку для просмотра следующей\n      </div>\n\n    <form class=\"newsTextBlock\" ng-app=\"myApp\">\n      <div class=\"example-full-width\" ng-controller=\"myController\">\n        <label class=\"textLabel\" for=\"newsText\">Поле для текста новости</label>\n        <br>\n        <div class=\"textareaDiv\">\n          <div contenteditable=\"true\" class=\"textareaClass\"  id=\"newsText\">{{newsText}}</div>\n        </div>\n      </div>\n      </form>\n        <button mat-fab>\n          <mat-icon>favorite</mat-icon>\n        </button>\n        <button mat-fab color=\"assent\">Comment</button>\n      <button mat-raised-button color=\"primary\" (click)=\"onSave()\">Save</button>\n      <button mat-raised-button color=\"primary\" (click)=\"onDeSelect()\">Return</button>\n      <li class=\"commentBlock\" *ngFor=\"let comment of COMMENTS\">\n        <div class=\"comment\">\n          <div *ngIf=\"comment.newsId==selectedNews.newsId\">\n            <div *ngIf=\"comment.prevCommId\">to {{USERMASS[1].name}}</div>\n            <div>Author: {{USERMASS[comment.userId].name}}</div>\n            <div>{{comment.text}}</div>\n          </div>\n        </div>\n      </li>\n    </div>\n\n\n</ng-template>\n\n\n\n"
+module.exports = "<style>\n  ul {\n    margin: 0;\n    padding: 0;\n  }\n</style>\n<div *ngIf=\"selectedNews; then thenBlock else elseBlock\"></div>\n<ng-template #elseBlock>\n  <div class=\"mainBlock\" >\n    <ul class=\"news\">\n      <li class=\"newsBlock\" *ngFor=\"let news of NEWS\"\n          [class.selected]=\"news === selectedNews\"\n          (click)=\"onSelect(news)\">\n        <br>\n        <div class=\"newsNameBlock\">{{news.newsName}}</div>\n        <br>\n          <div class=\"center-div\">\n            <img class=\"newsPictureBlock\" src=\"{{PICTURES[news.pictureMass[0]].url}}\">\n          </div>\n          <div class=\"newsTextBlock\">{{news.text}}</div>\n          <div class=\"authorBlock\">Author</div>\n          <div class=\"authorBlock\">{{USERMASS[news.userId].name}}</div>\n       </li>\n    </ul>\n  </div>\n</ng-template>\n<ng-template #thenBlock>\n  <div class=\"oneNewsBlock\">\n     <br>\n     <div class=\"newsNameBlock\">{{selectedNews.newsName}}</div>\n    <br>\n      <div class=\"center-div\">\n        <img class=\"newsPictureBlock\" src=\"{{PICTURES[selectedNews.pictureMass[pictureNumber]].url}}\" (click)=\"changePicture()\">\n        Нажмите на картинку для просмотра следующей\n      </div>\n\n    <form class=\"newsTextBlock\" ng-app=\"myApp\">\n      <div class=\"example-full-width\" ng-controller=\"myController\">\n        <label class=\"textLabel\" for=\"newsText\">Поле для текста новости</label>\n        <br>\n        <div class=\"textareaDiv\">\n          <div contenteditable=\"true\" class=\"textareaClass\"  id=\"newsText\">{{newsText}}</div>\n        </div>\n      </div>\n      </form>\n        <button mat-fab>\n          <mat-icon>favorite</mat-icon>\n        </button>\n        <button mat-fab color=\"assent\">Comment</button>\n      <button mat-raised-button color=\"primary\" (click)=\"onSave()\">Save</button>\n      <button mat-raised-button color=\"primary\" (click)=\"onDeSelect()\">Return</button>\n      <li class=\"commentBlock\" *ngFor=\"let comment of COMMENTS\">\n        <div class=\"comment\" *ngIf=\"comment.newsId==selectedNews.newsId\">\n          <div>\n            <div *ngIf=\"comment.prevCommId\">to {{USERMASS[1].name}}</div>\n            <div>Author: {{USERMASS[comment.userId].name}}</div>\n            <div>{{comment.text}}</div>\n          </div>\n        </div>\n      </li>\n    </div>\n\n\n</ng-template>\n\n\n\n"
 
 /***/ }),
 
