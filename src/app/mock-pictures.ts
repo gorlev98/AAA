@@ -3,7 +3,7 @@
  */
 import {Pictures} from './pictures';
 
-export const PictureMass: Pictures[]=[
+export var PictureMass: Pictures[]=[
   {
     pictureId:1,
     url:"https://fullhdpictures.com/wp-content/uploads/2015/11/Eiffel-Tower-Wallpaper-HD.jpg"

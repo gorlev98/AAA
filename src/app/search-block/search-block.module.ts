@@ -4,8 +4,8 @@
 import {NgModule} from '@angular/core';
 
 import {SearchBlockComponent} from './search-block.component';
-import {MatInputModule} from '@angular/material/input';
-import {MatButtonModule} from '@angular/material';
+import {MatInputModule} from '@angular/material';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   imports: [MatInputModule, MatButtonModule],

@@ -1,25 +1,12 @@
-<!-- <div class="header">
-  <div >
-    <mat-toolbar class="matToolbar" >
-      <mat-toolbar-row class="matToolbarRow">
-            <span class="example-spacer"></span>
-            <button class="menuClass" [matMenuTriggerFor]="menu">Menu</button>
-            <mat-menu #menu="matMenu" [overlapTrigger]="false">
-              <button class="usernameBlock" mat-menu-item>Item 1</button>
-              <button class="usernameBlock" mat-menu-item>Item 2</button>
-            </mat-menu>
-      </mat-toolbar-row>
-    </mat-toolbar>
-  </div>
-</div> -->
 <div class="header">
   <div>
-   <button mat-button [matMenuTriggerFor]="menu"  class="menuButtonBlock">Menu</button>
+   <button mat-raised-button [matMenuTriggerFor]="menu"  class="menuButtonBlock">Menu</button>
     <mat-menu #menu="matMenu" [overlapTrigger]="false" class="menuBlock">
-      <button mat-menu-item="">Registration</button>
-      <button mat-menu-item="">Autorisation</button>
-      <button mat-menu-item="">Profile</button>
+      <button mat-menu-item="" (onclick)="menuSelect(1)">Registration</button>
+      <button mat-menu-item="" (onclick)="menuSelect(2)">Autorisation</button>
+      <button mat-menu-item="" (onclick)="menuSelect(3)">Profile</button>
     </mat-menu>
   </div>
   <div class="usernameBlock">Username</div>
 </div>
+

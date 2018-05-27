@@ -1,10 +1,57 @@
-<div class="mainBlock">
-  <li class="newsBlock" *ngFor="let news of NEWS">
-
+<style>
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+<div *ngIf="selectedNews; then thenBlock else elseBlock"></div>
+<ng-template #elseBlock>
+  <div class="mainBlock" >
+    <ul class="news">
+      <li class="newsBlock" *ngFor="let news of NEWS"
+          [class.selected]="news === selectedNews"
+          (click)="onSelect(news)">
+        <br>
         <div class="newsNameBlock">{{news.newsName}}</div>
-        <div class="center-div">
-          <img class="newsPictureBlock" src="{{PICTURES[news.pictureMass[0]].url}}">
+        <br>
+          <div class="center-div">
+            <img class="newsPictureBlock" src="{{PICTURES[news.pictureMass[0]].url}}">
+          </div>
+          <div class="newsTextBlock">{{news.text}}</div>
+
+       </li>
+    </ul>
+  </div>
+</ng-template>
+<ng-template #thenBlock>
+  <div class="oneNewsBlock">
+     <br>
+     <div class="newsNameBlock">{{selectedNews.newsName}}</div>
+    <br>
+      <div class="center-div">
+        <img class="newsPictureBlock" src="{{PICTURES[selectedNews.pictureMass[pictureNumber]].url}}" (click)="changePicture()">
+        Нажмите на картинку для просмотра следующей
+      </div>
+
+    <form class="newsTextBlock" ng-app="myApp">
+      <div class="example-full-width" ng-controller="myController">
+        <label class="textLabel" for="newsText">Поле для текста новости</label>
+        <br>
+        <div class="textareaDiv">
+          <div contenteditable="true" class="textareaClass"  id="newsText">{{newsText}}</div>
         </div>
-        <div class="newsTextBlock">{{news.text}}</div>
-     </li>
-</div>
+      </div>
+      </form>
+        <button mat-fab>
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-fab color="assent">Comment</button>
+      <button mat-raised-button color="primary" (click)="onSave()">Save</button>
+      <button mat-raised-button color="primary" (click)="onDeSelect()">Return</button>
+    </div>
+
+
+</ng-template>
+
+
+

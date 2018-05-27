@@ -3,7 +3,7 @@
  */
 import {Tags} from './tags';
 
-export const TagMass: Tags[]=[
+export var TagMass: Tags[]=[
   {
     tagId:1,
     tagName:"Политика"

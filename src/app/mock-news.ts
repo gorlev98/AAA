@@ -3,17 +3,17 @@
  */
 import { News } from './news';
 
-export const NewsMass: News[]=[
-  { newsId:1,
+export var NewsMass: News[]=[
+  { newsId:0,
     userId:1,
     newsName:"Name1",
     text:"Text1",
-    pictureMass:[0],
+    pictureMass:[0,1,2],
     kommentaryMass:[],
     commonMark:undefined,
     markMass:[],
     tagMass:[]},
-  { newsId:2,
+  { newsId:1,
     userId:1,
     newsName:"Name2",
     text:'Lemons entered Europe near southern Italy no later than the second century AD, during the time of Ancient Rome. However, they were not widely cultivated.' +
@@ -27,7 +27,7 @@ export const NewsMass: News[]=[
     commonMark:undefined,
     markMass:[],
     tagMass:[]},
-  { newsId:3,
+  { newsId:2,
     userId:1,
     newsName:"Name3",
     text:"Text3",

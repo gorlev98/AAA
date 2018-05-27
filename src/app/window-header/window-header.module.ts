@@ -1,13 +1,14 @@
-/*import {NgModule} from '@angular/core';
+import {NgModule} from '@angular/core';
+
+import {WindowHeaderComponent} from './window-header.component';
+import {MatButtonModule} from '@angular/material';
+import {MatFormFieldModule, MatToolbarModule,  MatTabsModule, MatMenuModule} from '@angular/material';
 import {CommonModule} from '@angular/common';
-import {MatFormFieldModule, MatToolbarModule, MatIconModule, MatTabsModule, MatInputModule, MatMenuModule} from '@angular/material';
-import {WindowHeaderComponent} from './window-header.component'
 @NgModule({
-  imports: [CommonModule,MatToolbarModule, MatFormFieldModule, MatIconModule, MatInputModule, MatMenuModule, MatTabsModule],
-  exports: [MatToolbarModule, MatFormFieldModule, MatIconModule, MatInputModule, MatMenuModule, MatTabsModule],
+  imports: [MatButtonModule, CommonModule,MatFormFieldModule, MatToolbarModule,  MatTabsModule, MatMenuModule],
+  exports: [WindowHeaderComponent, MatButtonModule, CommonModule,MatFormFieldModule, MatToolbarModule,  MatTabsModule, MatMenuModule],
   declarations: [WindowHeaderComponent],
   providers: [],
 })
 export class WindowHeaderModule {
-
-}*/
+}

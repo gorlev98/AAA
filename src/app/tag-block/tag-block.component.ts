@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import {Tags} from '../tags';
 import {TagMass} from '../mock-tags';
 @Component({
